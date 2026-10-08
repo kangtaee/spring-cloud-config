@@ -1,0 +1,5 @@
+token:
+  expiration-time: 86400000 # 1 day
+
+greeting:
+  message: Welcome to the Simple E-commerce (dev profile).
