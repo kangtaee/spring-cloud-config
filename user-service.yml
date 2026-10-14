@@ -3,11 +3,9 @@ spring:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;
     username: sa
-    password: '{cipher}AYByoRZo3Wa517lYoAkQOeM+k4NQ68fRPY74BVbK+154K5n8htPir3HasuzMgWrOsr0NGABN3JQBHBYqhc90XTSP+E3UdQAo7UTsweTiCtuFmUzm0hDoyM3A1RWITcIR/UpJTTv5QktpoOrO28QckAx3A9ZmBz5otYL9LifzZvPtz7DzrgbbV4BuZc+hRyR6ia6h4UjTTLwLqKZBZuXJVjtJt6V2rUqJI5eShcJRoIWb0LJrh5Z8MnO5i1ffOJiS2RjBG+Bfqq7YxF2QCxLyF8SgR8erycIXa7VIfnG+e1BVNKqGsYEqLo7nRqPvomHVbq/ZwHQoPYChNGNaXADMQjAE0dZdjLTtKt+OB8eoJzUJhVt7KNHDmHuppPA28vAi0lDwdvbg9KCrdttod763GMmt29gnyg7tUHcVp6T9Ldeb62BIbRAS/pcwgFjok0s1Yp5zzYEiac935us/wxWtwVrqHDlNpPHbkDg6Jcyzds+sFlMFbQ9Q4wo369vF/Rl8FBz44IqJV3N/IiufkyOcjS2B2ZYta9hlAzcOmou5g8YxUg=='
+    # password: '{cipher}b5c9bef1bb50392498d9c709f4c73f64d605eb3aabbd548d04e127bfe48dd3cb'
+    password: '{cipher}AYCtgfYb25geHENw41pbTC2vGa/OuhQvJz7rvCSMrXNi/NzRvarsIvljdSNdlYSQZntManGcIf0W9W/4axMFzboWZQijLbdE6dbTQ51eZ4wLIGEFJib/bUIyHuRpbX+HqITCal3NJAvHGw20vXXHXn9lvuci50EN3UBMgH3TftG6or6ecE8rxGKCIb8L9zeBVIds0Y51EpMy0Bb4t7WwSROTBXOsrhfBG1QqpGxhTTjVlgV67hqXJHES0t/Xv379yi8u0bthMxG8cmevJH+FLDUSdIEtfwDTA3Yuw7+OL73N1rAemI42fSaJ3XRX7YS0GJRZsqgWLc53dZbcvvmp/B6O6aEJYsomVxoA64+gFi70N6TEkdwqQ6jM9qY9EVZAOlGUax7GXHT9aFzSVCn4NufJhyuFxlsf/pZUsiB3yPVHRPZwqRkKT03PGvFYTQlTPbnrWzlM9rKjBbyhlSaQmMlLQgNp12MKnYuyM4okiaaAOdSYTefnCqG74mRlw6YNVgGVbK1QazRnOVwxv5SK77bp1tSC/9vad+/tQfW0Hf0F8w=='
 
-token:
-  expiration-time: 864000000
-  secret: '{cipher}AYCBE2kNxah+objJyo8NWEJQ/lDuD+XArrmRQxBJKKVmsgFcjs8CfkmmUB0L3Gx8JUXUyoMsHstyHkS+cToR4VXSY8RqrAfG9XWZkZm4qsVIP64tBKtDZkzAFUCuxB+Iy9gFWOL2zvHS/WhVQ850UFNHc2Ab++ahup242NSj7HlQuuGx1SikMHk5Td/m/4DV6QL9t+uXM/VtcrMMf8ZaH0wFvsUFTYoMBtmb/qk1mQgjQ2lUI7jxKLblki0il9cvF3vp665ogBmkKIeAM3Ik2xw/lPPCdlJepeNPKBH8H70S6b0NX+ciGPuScuL/5aAwU9Cjjq9niMx0XrXPOl5/gIY59Q7BMBwMgyZdhivTkhFOKSNICa+EidslM/PX4CY4SdA8usRA0FjuGeT10eDNs3+kmpdh84maXJzAsEXCDMEIbQl0wpfIENt/dcqfR9wKD1h+U7gnAzIpaEHOn6aiQIFx79oOwAV3dYrOWRWv1EO4YR02aJCmeKaHjh/VUUSSmPWApgFhA13Q9kOw9xjk/lQXgoZN/NcJ43B42l66wKs2T2Kp7AwD00joI/VgCbuZAl/8twsNaAvXRHhrNLS30iBNhdexUyy8xlsMDi3R/tMeAg=='
-
-gateway:
-  ip: 172.31.96.1
+order-service:
+  # url: http://127.0.0.1:8080/order-service/%s/orders # 하드코딩
+  url: http://order-service/order-service/%s/orders # 유레카에 등록된 서비스 이름을 사용하여 동적으로 주문 서비스 URL 생성

@@ -1,6 +1,7 @@
-token:
-  expiration-time: 864000000 # 10 days
-  secret: '{cipher}AYCBE2kNxah+objJyo8NWEJQ/lDuD+XArrmRQxBJKKVmsgFcjs8CfkmmUB0L3Gx8JUXUyoMsHstyHkS+cToR4VXSY8RqrAfG9XWZkZm4qsVIP64tBKtDZkzAFUCuxB+Iy9gFWOL2zvHS/WhVQ850UFNHc2Ab++ahup242NSj7HlQuuGx1SikMHk5Td/m/4DV6QL9t+uXM/VtcrMMf8ZaH0wFvsUFTYoMBtmb/qk1mQgjQ2lUI7jxKLblki0il9cvF3vp665ogBmkKIeAM3Ik2xw/lPPCdlJepeNPKBH8H70S6b0NX+ciGPuScuL/5aAwU9Cjjq9niMx0XrXPOl5/gIY59Q7BMBwMgyZdhivTkhFOKSNICa+EidslM/PX4CY4SdA8usRA0FjuGeT10eDNs3+kmpdh84maXJzAsEXCDMEIbQl0wpfIENt/dcqfR9wKD1h+U7gnAzIpaEHOn6aiQIFx79oOwAV3dYrOWRWv1EO4YR02aJCmeKaHjh/VUUSSmPWApgFhA13Q9kOw9xjk/lQXgoZN/NcJ43B42l66wKs2T2Kp7AwD00joI/VgCbuZAl/8twsNaAvXRHhrNLS30iBNhdexUyy8xlsMDi3R/tMeAg=='
+# token:
+#   expiration_time: 86400000 # 1 day
+#   secret: this is a default secret from config service - bus refresh test
 
 gateway:
-  ip: 172.31.96.1
+  # ip: 192.168.0.100 # 테스트용 임의값
+  ip: 231.22.43.14 # 테스트용 임의값 수정

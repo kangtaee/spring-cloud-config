@@ -1,5 +1,6 @@
 token:
-  expiration-time: 86400000 # 1 day
+  expiration_time: 86400000 # 1 day
+  secret: this is a development secret from config service
 
-greeting:
-  message: Welcome to the Simple E-commerce (dev profile).
+gateway:
+  ip: 192.168.0.100 # 테스트용 임의값
